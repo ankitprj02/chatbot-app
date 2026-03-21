@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Botanical Intelligence - Helper Cane</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#00492e",
+              "on-secondary-fixed-variant": "#27673d",
+              "error-dim": "#67040d",
+              "on-primary-container": "#005e3d",
+              "surface-container-highest": "#dce5e0",
+              "on-primary-fixed-variant": "#0d6945",
+              "primary-fixed": "#a2f4c6",
+              "error-container": "#fa746f",
+              "inverse-on-surface": "#9a9e9b",
+              "secondary-container": "#aef2bc",
+              "on-surface": "#2c3431",
+              "secondary": "#2b6b40",
+              "primary-container": "#a2f4c6",
+              "secondary-fixed": "#aef2bc",
+              "inverse-primary": "#a7facc",
+              "inverse-surface": "#0b0f0e",
+              "tertiary-dim": "#4a564d",
+              "surface": "#f7faf7",
+              "surface-bright": "#f7faf7",
+              "surface-container": "#e9efeb",
+              "on-secondary-container": "#1b5d34",
+              "on-surface-variant": "#58615e",
+              "on-tertiary": "#effcf0",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#2c3431",
+              "on-tertiary-fixed-variant": "#5b675e",
+              "tertiary-fixed-dim": "#d9e6da",
+              "surface-container-low": "#f0f5f1",
+              "on-primary": "#e6ffed",
+              "surface-tint": "#146c49",
+              "tertiary-container": "#e7f4e8",
+              "secondary-fixed-dim": "#a0e4ae",
+              "primary": "#146c49",
+              "on-error": "#fff7f6",
+              "outline": "#747d79",
+              "outline-variant": "#abb4b0",
+              "on-error-container": "#6e0a12",
+              "secondary-dim": "#1d5f35",
+              "primary-fixed-dim": "#94e5b9",
+              "primary-dim": "#00603e",
+              "on-secondary-fixed": "#004a23",
+              "tertiary": "#566259",
+              "on-tertiary-fixed": "#3f4b42",
+              "surface-variant": "#dce5e0",
+              "surface-container-high": "#e3eae6",
+              "surface-dim": "#d3dcd8",
+              "tertiary-fixed": "#e7f4e8",
+              "error": "#a83836",
+              "background": "#f7faf7",
+              "on-secondary": "#e8ffe8",
+              "on-tertiary-container": "#515d54"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#f7faf7]/80 dark:bg-[#1a1c1a]/80 backdrop-blur-md fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 w-full shadow-[0_32px_32px_-12px_rgba(44,52,49,0.06)]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Microscopic botanical leaf structure pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT_yQqzCwqHvD56qP5lc6aifYrrrLaLBxSBPkephdxRuN4vSICCLUH841R-M2j2COOIP91F4REO8A5_AzajlWwSbzlYS_Mc63JzGt9QHY9R_PR3UcFnRBPrRxMV9E_kShlWXozxGLmIri81LrJDxA4OAi8MzuDOxLo3lLH0D6wk6e6ZPs7LUAv9nkAu1835Pmsxg9LJLoNsftYj653AJPo79-uj8m9GL5yD091EgfuXaAp-6fZ8u2o3fCQEnPDjSct4A9QEN6MCnLL"/>
+</div>
+<div>
+<h1 class="font-headline text-headline-sm tracking-tight font-bold text-[#2c3431] leading-tight">Helper Cane</h1>
+<div class="flex items-center gap-1.5 bg-secondary-container/30 px-2 py-0.5 rounded-full w-fit">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+<span class="text-[11px] font-bold text-on-secondary-container tracking-wider uppercase">2 credits</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#f0f5f1] transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-on-surface-variant">more_vert</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-48 px-6 min-h-screen max-w-2xl mx-auto flex flex-col gap-6">
+<!-- Date Indicator -->
+<div class="flex justify-center my-4">
+<span class="text-on-surface-variant text-label-md bg-surface-container px-4 py-1 rounded-full opacity-60">Today</span>
+</div>
+<!-- AI Message -->
+<div class="flex flex-col items-start gap-2 max-w-[85%]">
+<div class="bg-surface-container-highest text-on-surface px-5 py-4 rounded-DEFAULT rounded-bl-sm shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-label-md font-bold text-on-surface-variant tracking-wide uppercase">Assistant</span>
+</div>
+<p class="font-body text-lg leading-relaxed">
+                    Hello! I'm your digital <span class="text-primary font-bold">Food &amp; Skin Assistant</span>. I help you understand the relationship between what you eat and your skin's health. How can I guide your glow today?
+                </p>
+</div>
+<span class="text-[11px] text-on-surface-variant/50 ml-2">10:42 AM</span>
+</div>
+<!-- User Message -->
+<div class="flex flex-col items-end gap-2 max-w-[85%] self-end">
+<div class="bg-primary-container text-on-primary-container px-5 py-4 rounded-DEFAULT rounded-br-sm shadow-sm">
+<p class="font-body text-lg leading-relaxed">
+                    I've been breaking out lately. Can you suggest some skin-friendly snacks?
+                </p>
+</div>
+<span class="text-[11px] text-on-surface-variant/50 mr-2">10:43 AM</span>
+</div>
+<!-- AI Typing Response (Empty Space for editorial feel) -->
+<div class="flex flex-col items-start gap-2 max-w-[85%] mt-4">
+<div class="bg-surface-container-highest text-on-surface px-5 py-4 rounded-DEFAULT rounded-bl-sm shadow-sm">
+<p class="font-body text-lg leading-relaxed">
+                    Certainly! Avoiding high-glycemic foods can help reduce inflammation. I recommend snacks rich in Omega-3s and Vitamin C.
+                </p>
+</div>
+</div>
+<!-- Quick Action Chips Section -->
+<div class="mt-8">
+<h3 class="font-headline text-label-md font-bold text-on-surface-variant tracking-widest uppercase mb-4 ml-2">Suggested Topics</h3>
+<div class="flex flex-wrap gap-3">
+<button class="bg-surface-container-lowest border-[1px] border-outline-variant/15 px-5 py-3 rounded-full text-on-surface text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm active:scale-95">
+                    Which foods cause acne?
+                </button>
+<button class="bg-surface-container-lowest border-[1px] border-outline-variant/15 px-5 py-3 rounded-full text-on-surface text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm active:scale-95">
+                    Safe snacks for sensitive skin?
+                </button>
+<button class="bg-surface-container-lowest border-[1px] border-outline-variant/15 px-5 py-3 rounded-full text-on-surface text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm active:scale-95">
+                    Best hydration routines
+                </button>
+<button class="bg-surface-container-lowest border-[1px] border-outline-variant/15 px-5 py-3 rounded-full text-on-surface text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm active:scale-95">
+                    Zinc-rich meal plan
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Input Section (Fixed) -->
+<div class="fixed bottom-0 left-0 w-full z-50 px-6 pb-10 pt-4 bg-surface/40 backdrop-blur-sm">
+<div class="max-w-2xl mx-auto flex items-center gap-3 bg-surface-container-lowest p-2 rounded-full shadow-[0_32px_32px_rgba(44,52,49,0.1)] border-[1px] border-outline-variant/10">
+<button class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface font-body px-2 py-3 placeholder:text-on-surface-variant/50" placeholder="Ask about ingredients..." type="text"/>
+<button class="bg-primary w-12 h-12 flex items-center justify-center rounded-full text-on-primary shadow-lg active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 600;">arrow_upward</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar (Suppressed as it's a sub-page/active task view, but implied structure remains if needed for shell) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#ffffff]/80 dark:bg-[#0c0d0c]/80 backdrop-blur-xl z-40 shadow-[0_-8px_32px_rgba(44,52,49,0.06)] rounded-t-[2rem] hidden md:hidden">
+<a class="flex flex-col items-center justify-center bg-[#a2f4c6] dark:bg-[#005e3d] text-[#005e3d] dark:text-[#a2f4c6] rounded-full px-6 py-2 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-plus-jakarta text-label-md font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#58615e] dark:text-[#abb4b0] px-6 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-plus-jakarta text-label-md font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

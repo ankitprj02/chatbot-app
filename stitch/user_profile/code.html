@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile - The Botanical Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#00492e",
+              "on-secondary-fixed-variant": "#27673d",
+              "error-dim": "#67040d",
+              "on-primary-container": "#005e3d",
+              "surface-container-highest": "#dce5e0",
+              "on-primary-fixed-variant": "#0d6945",
+              "primary-fixed": "#a2f4c6",
+              "error-container": "#fa746f",
+              "inverse-on-surface": "#9a9e9b",
+              "secondary-container": "#aef2bc",
+              "on-surface": "#2c3431",
+              "secondary": "#2b6b40",
+              "primary-container": "#a2f4c6",
+              "secondary-fixed": "#aef2bc",
+              "inverse-primary": "#a7facc",
+              "inverse-surface": "#0b0f0e",
+              "tertiary-dim": "#4a564d",
+              "surface": "#f7faf7",
+              "surface-bright": "#f7faf7",
+              "surface-container": "#e9efeb",
+              "on-secondary-container": "#1b5d34",
+              "on-surface-variant": "#58615e",
+              "on-tertiary": "#effcf0",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#2c3431",
+              "on-tertiary-fixed-variant": "#5b675e",
+              "tertiary-fixed-dim": "#d9e6da",
+              "surface-container-low": "#f0f5f1",
+              "on-primary": "#e6ffed",
+              "surface-tint": "#146c49",
+              "tertiary-container": "#e7f4e8",
+              "secondary-fixed-dim": "#a0e4ae",
+              "primary": "#146c49",
+              "on-error": "#fff7f6",
+              "outline": "#747d79",
+              "outline-variant": "#abb4b0",
+              "on-error-container": "#6e0a12",
+              "secondary-dim": "#1d5f35",
+              "primary-fixed-dim": "#94e5b9",
+              "primary-dim": "#00603e",
+              "on-secondary-fixed": "#004a23",
+              "tertiary": "#566259",
+              "on-tertiary-fixed": "#3f4b42",
+              "surface-variant": "#dce5e0",
+              "surface-container-high": "#e3eae6",
+              "surface-dim": "#d3dcd8",
+              "tertiary-fixed": "#e7f4e8",
+              "error": "#a83836",
+              "background": "#f7faf7",
+              "on-secondary": "#e8ffe8",
+              "on-tertiary-container": "#515d54"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#f7faf7]/80 dark:bg-[#1a1c1a]/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_32px_32px_-12px_rgba(44,52,49,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="User profile photo of a man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGF8Irpy728IFfmokyHNeK9cYagkiykNNRQZw2txOLezqNq9rUIrL_cI__7qI4BseY8WGRnJguVy7sxiN8sGfKze248fZUIbpU39QPxAg5zemPeaAmfvfgRONde9t4G4TONp7ePILW7Q6l4vq8wi9nOmG1LdDcqE-KjsPkxJixesxnmqeB6zGqv6ml94giV-vu6erqfdROTKQlAiF1_O5s6UaJs_7wM_BrFjmTfOexE-TwR8KWgBBnk98Pdl31cr-qYNHNxgWVTLcc"/>
+</div>
+<span class="text-xl font-bold text-[#2c3431] dark:text-[#e1e3e0]">The Botanical Intelligence</span>
+</div>
+<button class="text-[#5BB381] dark:text-[#72d398] hover:bg-[#f0f5f1] dark:hover:bg-[#232623] transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Profile Header Section -->
+<section class="flex flex-col items-center text-center space-y-4 pt-4">
+<div class="relative">
+<div class="w-32 h-32 rounded-xl p-1 bg-gradient-to-tr from-primary to-secondary">
+<div class="w-full h-full rounded-lg overflow-hidden border-4 border-surface">
+<img class="w-full h-full object-cover" data-alt="Portrait of Arshroop Singh Saini" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPr_UNDjELxKLecAJkmRMRFBKkU5LxgzAkhn0vhbaYW5d-QjEElRmPOxGv1r1Qcnnnd7og-A29toIgObVwTr5B8abpATT52L9hFcusp-89gs9SVukNHrp4DAEM7udXwE3ui98dDUMyOnjgjNBVamcVjJ-P1vXGmozrYDT7vkAvE2_PXyMBHyPac6rMaQrVN4mGhbHp_g8KmmAWb1cNGGq9fYiERBM3r58--61_Ot9MondSPTzomEnZM_qaFgCTp045aOZTpx6JeYnF"/>
+</div>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center shadow-lg border-2 border-surface">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</div>
+</div>
+<div>
+<h1 class="text-2xl font-extrabold tracking-tight text-on-surface">Arshroop Singh Saini</h1>
+<p class="text-on-surface-variant font-medium">Botanical Enthusiast • Level 4</p>
+</div>
+</section>
+<!-- Premium Card -->
+<section class="bg-gradient-to-br from-primary to-secondary rounded-lg p-6 text-on-primary shadow-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl" data-icon="temp_grow">temp_preferences_eco</span>
+</div>
+<div class="relative z-10 space-y-4">
+<div class="space-y-1">
+<h2 class="text-xl font-bold leading-tight">Try Sugarcane Pro for free!</h2>
+<p class="text-on-primary/80 text-sm max-w-[200px]">Unlock advanced AI analysis and personalized growth cycles.</p>
+</div>
+<button class="bg-surface-container-lowest text-primary px-6 py-2.5 rounded-full font-bold text-sm shadow-sm active:scale-95 transition-all flex items-center gap-2 w-fit">
+                    Upgrade Now
+                    <span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</section>
+<!-- Settings List -->
+<section class="space-y-6">
+<div class="space-y-2">
+<h3 class="px-2 text-on-surface-variant text-xs font-bold uppercase tracking-widest">Personalization</h3>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<!-- Skin & Hair Profile -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="face">face</span>
+</div>
+<span class="font-semibold">Skin &amp; Hair Profile</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold text-primary bg-primary-container px-2 py-1 rounded-full">Completed</span>
+<span class="material-symbols-outlined text-on-surface-variant opacity-30 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Skincare Routine -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="self_care">self_care</span>
+</div>
+<span class="font-semibold">Skincare Routine</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold text-primary bg-primary-container px-2 py-1 rounded-full">Completed</span>
+<span class="material-symbols-outlined text-on-surface-variant opacity-30 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- My Reviews -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="reviews">reviews</span>
+</div>
+<span class="font-semibold">My Reviews</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold text-on-surface-variant bg-surface-variant px-2 py-1 rounded-full">12 Reviews</span>
+<span class="material-symbols-outlined text-on-surface-variant opacity-30 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<h3 class="px-2 text-on-surface-variant text-xs font-bold uppercase tracking-widest">Account &amp; Legal</h3>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<!-- Manage Account -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="manage_accounts">manage_accounts</span>
+</div>
+<span class="font-semibold">Manage Account</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-30 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Privacy Policy -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<span class="font-semibold">Privacy Policy</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-30 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Terms of Service -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+</div>
+<span class="font-semibold">Terms of Service</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-30 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Logout Button -->
+<button class="w-full py-4 text-error font-bold flex items-center justify-center gap-2 bg-error-container/10 rounded-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                Logout
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#ffffff]/80 dark:bg-[#0c0d0c]/80 backdrop-blur-xl z-50 rounded-t-[2rem] shadow-[0_-8px_32px_rgba(44,52,49,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#58615e] dark:text-[#abb4b0] px-6 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta text-label-md font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#a2f4c6] dark:bg-[#005e3d] text-[#005e3d] dark:text-[#a2f4c6] rounded-full px-6 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-plus-jakarta text-label-md font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

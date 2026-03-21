@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "chatbot-app",
+    "slug": "chatbot-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#f7faf7"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.chatbotapp"
+    },
+    "android": {
+      "package": "com.yourname.chatbotapp"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Python/Backend files
+backend/venv/
+backend/__pycache__/
+backend/.env
+*.pyc
+
+# Ignore Node/Frontend files
+node_modules/
+stitch/stitch_rn_app/.env
+stitch/stitch_rn_app/node_modules/
+.expo/

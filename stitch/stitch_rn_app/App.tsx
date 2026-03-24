@@ -22,6 +22,8 @@ export default function App() {
   });
 
   useEffect(() => {
+    Purchases.setLogLevel(Purchases.LOG_LEVEL.DEBUG);
+
     const apiKey = Platform.OS === 'ios' 
       ? process.env.EXPO_PUBLIC_REVENUECAT_API_KEY_IOS 
       : process.env.EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID;
